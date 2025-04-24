@@ -80,11 +80,11 @@ async function main() {
 
         if (version !== 'SNAPSHOT' || (SNAPSHOT_SUBTARGETS_TO_BUILD.includes(subtarget) && SNAPSHOT_TARGETS_TO_BUILD.includes(target))) {
           jobConfig.push({
-            tag: version,
-            target,
-            subtarget,
-            vermagic,
-            pkgarch,
+            tag: "23.05.5",
+            target: "rockchip",
+            subtarget: "armv8",
+            vermagic: "0919bf77bd78281b8293e21504faecfb",
+            pkgarch: "aarch64_cortex-a53",
           });
         }
       }
